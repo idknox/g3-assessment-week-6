@@ -40,7 +40,6 @@ describe Parks do
       expect(parks.index_by_id).to eq(parks_after)
     end
   end
-
   describe "index by country" do
     it "arranges the parks by country in a hash" do
       parks = Parks.new([

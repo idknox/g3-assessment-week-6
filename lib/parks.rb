@@ -6,12 +6,11 @@ class Parks
 
   def index_by_id
     output = {}
-    @parks.each {|park| output[park[:id]] = park}
+    @parks.each { |park| output[park[:id]] = park }
     output
   end
 
   def index_by_country
-  @parks.group_by {|park| park[:country]}
+    @parks.group_by { |park| park[:country] }
   end
-  
 end
